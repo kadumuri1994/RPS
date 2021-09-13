@@ -1,7 +1,7 @@
 from game.state import State
 from rockpaperscissors.tally import Tally
 from game.ui.console_ui import ConsoleUI
-from game.game_over_state import ConsoleGameState
+from game.game_over_state import GameOverState
 
 
 class EndOfGameState(State):
@@ -10,7 +10,7 @@ class EndOfGameState(State):
 
     def run(self, ui: ConsoleUI) -> State:
         ui.write(EndOfGameState.message(self.tally))
-        return ConsoleGameState()
+        return GameOverState()
 
     @staticmethod
     def message(tally: Tally) -> str:
