@@ -1,9 +1,8 @@
-from game.state import State
-from game.ui.console_ui import ConsoleUI
+from game.state import StateInterface
 
 
-class GameOverState(State):
+class GameOverState(StateInterface):
     """After the game is completed, we will be in this state!"""
 
-    def run(self, _ui: ConsoleUI) -> State:
+    def run(self) -> StateInterface:
         return self

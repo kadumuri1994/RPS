@@ -23,6 +23,6 @@ def map_table() -> dict:
     return {"r": Shapes.rock(), "p": Shapes.paper(), "s": Shapes.scissors()}
 
 
-def get_opponents_hand():
+def get_computer_hand():
     comp_choice = random.choice(["r", "p", "s"])
     return map_table()[comp_choice]

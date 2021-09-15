@@ -7,5 +7,3 @@ class RoundResult:
             raise TypeError("Shape objects cannot be of None Type.")
         self.score_p1 = 1 if p1.beats(p2) else 0
         self.score_p2 = 1 if p2.beats(p1) else 0
-        self.hand_p1 = p1.name()
-        self.hand_p2 = p2.name()
