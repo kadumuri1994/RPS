@@ -1,4 +1,4 @@
-from rockpaperscissors.shape import ShapeInterface
+from rock_paper_scissors.shape import ShapeInterface
 
 
 class RoundResult:

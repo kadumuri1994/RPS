@@ -10,6 +10,8 @@ def start_program():
         + "Rock vs Paper -> Paper wins \n"
         + "Rock vs Scissors -> Rock wins \n"
         + "paper vs Scissors -> Scissors wins \n"
+        + "Total number of rounds are 3.\n"
+        + "If a player wins most number of rounds, that player is the winner and game will be terminated."
     )
 
     io = Console()

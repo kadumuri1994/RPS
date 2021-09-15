@@ -1,5 +1,5 @@
 class ShapeInterface:
-    """Implement the below method that implements this interface"""
+    """Implement the below methods that implements this interface"""
 
     def name(self) -> str:
         pass

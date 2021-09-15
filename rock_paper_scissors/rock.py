@@ -1,4 +1,4 @@
-from rockpaperscissors.shape import RockInterface, ScissorsInterface, ShapeInterface
+from rock_paper_scissors.shape import RockInterface, ScissorsInterface, ShapeInterface
 
 
 class Rock(RockInterface):
