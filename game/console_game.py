@@ -18,16 +18,6 @@ class ConsoleGame:
         self._ui = console_ui
         self._ui.clear_screen()
         self._ui.write("Starting game...\n")
-        self._ui.write(
-            "Winning Rules of the Rock paper scissor game are as follows: \n"
-            + "Rock vs Paper -> Paper wins \n"
-            + "Rock vs Scissors -> Rock wins \n"
-            + "paper vs Scissors -> Scissors wins \n\n"
-            + "Total number of rounds are 3.\n\n"
-            + "If a player wins most number of rounds, that player is declared as winner and the game will be "
-            + "terminated.\nIf both players get equal points after all rounds, then the game would be extended "
-            + "with new round/rounds"
-        )
 
         game_modes_message = (
             "Following are the game modes:\n1.Player vs Computer\n2.Computer vs Computer\n"

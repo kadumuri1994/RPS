@@ -1,3 +1,4 @@
+import time
 from game.state import StateInterface
 from game.ui.console_ui import ConsoleUI
 from rock_paper_scissors.tally import Tally
@@ -25,8 +26,10 @@ class ComputerVsComputer(StateInterface):
             self._tally.hand_p1.name(), self._tally.hand_p2.name()
         )
 
+        time.sleep(2)
         self._tally.update()
         self._print_players_scores()
+        time.sleep(2)
 
         if self._tally.remaining_nr_of_rounds == 0:
             self._print_game_result(self._tally.score_p1, self._tally.score_p2)
